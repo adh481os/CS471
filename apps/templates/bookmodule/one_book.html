@@ -1,0 +1,11 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block title %} Show one Book {% endblock title %}
+{% block content %}
+<a href="{% url 'books.list_books' %}">Go Back</a>
+<h1>Details of Book1</h1>
+<h2>Continuous Delivery</h2>
+<h2>Author: Jez Humble and David Farley</h2>
+<p><strong>Continuous Delivery</strong> explains how to release software faster and more reliably through build, test, and deployment automation. It covers deployment pipelines, automated testing, and configuration management.</p>
+<img src="{% static 'book1.jpg' %}" alt="Continuous Delivery book cover" width="200" height="200">
+{% endblock content %}
